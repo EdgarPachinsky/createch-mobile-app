@@ -1,0 +1,3 @@
+#include "Generated.xcconfig"
+// macOS 27 lipo -verify_arch takes one arch, which breaks Flutter's universal simulator build; Apple Silicon only needs arm64
+ARCHS[sdk=iphonesimulator*] = arm64
